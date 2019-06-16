@@ -10,6 +10,7 @@ export default function TodoList({
   updateTodo,
   removeTodo
 }) {
+  if(todos.length) 
   return (
     <Paper>
       <List>
@@ -30,4 +31,5 @@ export default function TodoList({
       </List>
     </Paper>
   );
+  return null
 }
