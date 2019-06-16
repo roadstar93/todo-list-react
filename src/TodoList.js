@@ -13,7 +13,7 @@ export default function TodoList({
   return (
     <Paper>
       <List>
-        {todos.map(todo => (
+        {todos.map((todo, i) => (
           <>
             <Todo
               task={todo.task}
@@ -24,7 +24,7 @@ export default function TodoList({
               toggleTodo={toggleTodo}
               updateTodo={updateTodo}
             />
-            <Divider />
+            {i < todos.length - 1 && <Divider />}
           </>
         ))}
       </List>

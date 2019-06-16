@@ -12,6 +12,7 @@ export default function EditForm({ id, task, updateTodo, doneEditing }) {
         reset();
         doneEditing();
       }}
+      style={{ marginLeft: "1rem", width: "100%" }}
     >
       <TextField
         value={value}
@@ -19,6 +20,7 @@ export default function EditForm({ id, task, updateTodo, doneEditing }) {
         margin="normal"
         label="EditTodo"
         fullWidth
+        autoFocus
       />
     </form>
   );
